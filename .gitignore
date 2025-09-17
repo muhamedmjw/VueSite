@@ -1,0 +1,20 @@
+# VuePress build output
+docs/.vuepress/dist
+docs/.vuepress/.temp
+docs/.vuepress/.cache
+
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

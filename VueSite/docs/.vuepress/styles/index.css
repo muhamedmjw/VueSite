@@ -1,0 +1,79 @@
+body {
+  background: #161616;
+  color: #ececec;
+  font-family: 'Merriweather', serif;
+}
+
+#app, .theme-default-content, .page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 42px 0 0 0;
+}
+
+.sidebar, .navbar, .logo, .sidebar-group, .sidebar-heading, .sidebar-link, .sidebar-items, .sidebar-item, .navbar, .navbar-brand, .navbar-items, .navbar-item, .navbar-links {
+  display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  color: #ececec;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: #b8d0ff;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #fff;
+}
+
+ul.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  margin: 18px 0 0 0;
+  padding: 0;
+}
+
+ul.social-icons li {
+  display: inline-block;
+}
+
+.social-icons a {
+  color: #ececec;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #b8d0ff;
+}
+
+/* Remove page navigation arrows if present */
+.page-nav {
+  display: none !important;
+}
+
+/* Remove container box if present */
+.theme-default-content {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* Center everything */
+.theme-default-content,
+.page {
+  text-align: left;
+}
+
+/* Remove extra padding on home*/
+.home .hero {
+  margin-top: 0;
+  padding-top: 0;
+  text-align: left;
+}
