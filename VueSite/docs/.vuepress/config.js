@@ -14,13 +14,16 @@ export default defineUserConfig({
   ],
 
   theme: defaultTheme({
-    navbar: [
-      '/',
-      {
-        text: 'Article',
-        link: '/article/',
-      },
-    ],
+    // Disable navbar completely
+    navbar: false,
+    
+    // Optional: Also disable sidebar if you don't want it
+    sidebar: false,
+    
+    // Optional: Disable edit links and other navigation elements
+    editLink: false,
+    lastUpdated: false,
+    contributors: false,
   }),
 
   plugins: [
