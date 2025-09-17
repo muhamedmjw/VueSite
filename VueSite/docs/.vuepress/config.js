@@ -10,17 +10,39 @@ export default defineUserConfig({
   description: 'A VuePress Site',
 
   head: [
-    ['link', { rel: 'stylesheet', href: '/fonts.html' }]
+    ['style', {}, `
+      body {
+        background: #1a1a1a !important;
+        color: #e0e0e0 !important;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+      }
+      
+      h1 {
+        font-size: 2.5em !important;
+        font-weight: 400 !important;
+        text-align: left !important;
+        color: #f5f5f5 !important;
+      }
+      
+      #app, .theme-default-content, .page {
+        max-width: 700px !important;
+        margin: 0 auto !important;
+        padding: 60px 20px !important;
+      }
+      
+      a {
+        color: #d0d0d0 !important;
+      }
+      
+      a:hover {
+        color: #fff !important;
+      }
+    `]
   ],
 
   theme: defaultTheme({
-    // Disable navbar completely
     navbar: false,
-    
-    // Optional: Also disable sidebar if you don't want it
     sidebar: false,
-    
-    // Optional: Disable edit links and other navigation elements
     editLink: false,
     lastUpdated: false,
     contributors: false,
