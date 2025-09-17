@@ -12,29 +12,48 @@ export default defineUserConfig({
   head: [
   ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
   ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
-  ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap' }],
+  ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap' }],
   ['style', {}, `
     
+
     body {
+      margin: 0 !important;
+      padding: 0 !important;
       background: #1a1a1a !important;
       color: #ecececff !important;
       font-family: 'Noto Serif', serif !important;
     }
-    
+
+    div {
+      width: 800px !important;
+    }
+
     h1 {
-      font-size: 3.5em !important;
-      font-weight: 400 !important;
+      padding-top: 12px !important;
+      margin: 0 !important;
+      font-size: 3em !important;
+      font-weight: 700 !important;
       text-align: left !important;
       color: #ecececff !important;
-      font-family: 'Noto Serif', monospace !important;
+      font-family: 'Noto Serif', serif !important;
+    }
+
+    p{
+      font-weight: 300 !important;
+    }
+
+    h1 a {
+      margin: 0 !important;
+      text-decoration: none !important;
     }
 
     h2 {
+      border: none !important; 
       font-size: 2.5em !important;
       font-weight: 400 !important;
       text-align: left !important;
       color: #ecececff !important;
-      font-family: 'Noto Serif', monospace !important;
+      font-family: 'Noto Serif', serif !important;
     }
 
     a {
@@ -50,9 +69,13 @@ export default defineUserConfig({
       margin: 0 auto !important;
       padding: 20px 0px !important;
     }
-    
+   
   `]
-],
+  ],
+
+  markdown: {
+    anchor: false
+  },
 
   theme: defaultTheme({
     navbar: false,
@@ -63,7 +86,6 @@ export default defineUserConfig({
     smoothScroll: true,
     
   }),
-
 
   bundler: viteBundler(),
 })

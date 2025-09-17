@@ -1,6 +1,7 @@
-# Muhammed Mustafa
+# [Muhammed Mustafa](../README.md)
 
-[/posts](/posts/README.md) [/about](/about/README.md)
+[/posts](/posts/README.md) [/about](/about/README.md) <br>
+[~](../README.md) / [about](/posts/README.md)
 
 ## About Me
 

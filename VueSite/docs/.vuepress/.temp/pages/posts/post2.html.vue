@@ -1,6 +1,6 @@
-<template><div><h1 id="learning-database-design" tabindex="-1"><a class="header-anchor" href="#learning-database-design"><span>Learning Database Design</span></a></h1>
+<template><div><h1>Learning Database Design</h1>
 <p>Today I want to share some thoughts on database design principles I've been studying at Salahaddin University.</p>
-<h2 id="key-concepts" tabindex="-1"><a class="header-anchor" href="#key-concepts"><span>Key Concepts</span></a></h2>
+<h2>Key Concepts</h2>
 <ul>
 <li>Entity-Relationship modeling</li>
 <li>Normalization</li>

@@ -1,9 +1,9 @@
-# Muhammed Mustafa
+# [Muhammed Mustafa](../README.md)
 
 [/posts](/posts/README.md) [/about](/about/README.md)
 
 
-## Hi!
+## Hello!
 
 I am a student at Salahaddin University passionate about web development and solving interesting problems. I love learning new things about programming, databases, and web security.
 

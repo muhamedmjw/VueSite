@@ -1,4 +1,4 @@
-# Muhammed Mustafa
+# [Muhammed Mustafa](../README.md)
 
 [/posts](/posts/README.md) [/about](/about/README.md) <br>
 [~](../README.md) / [posts](/posts/README.md)
