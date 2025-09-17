@@ -1,6 +1,6 @@
 <template><div><h1><RouteLink to="/">Muhammed Mustafa</RouteLink></h1>
-<p><RouteLink to="/posts/">/posts</RouteLink> <RouteLink to="/about/">/about</RouteLink> <br>
-<RouteLink to="/">~</RouteLink> / <RouteLink to="/posts/">posts</RouteLink></p>
+<p><RouteLink to="/posts/">/posts</RouteLink> <RouteLink to="/about/">/about</RouteLink></p>
+<p><RouteLink to="/">~</RouteLink> / <RouteLink to="/posts/">posts</RouteLink></p>
 <h2>Posts</h2>
 <p>Here are my latest blog posts about web development, programming, and learning.</p>
 <h3>Recent Posts</h3>
