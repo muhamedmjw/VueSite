@@ -1,20 +1,13 @@
----
-title: My First Post
-date: 2024-01-15
-author: Muhammed Mustafa
-category: [Web Development]
-tag: [JavaScript, VuePress]
----
+# [Muhammed Mustafa](../README.md)
 
-# My First Post
+[/posts](/posts/README.md) [/about](/about/README.md)
 
-This is my first blog post about web development. I'm learning VuePress and enjoying the process of building my personal site.
+[~](../README.md) / [posts](/posts/README.md) / [Post 1](/posts/post1.md)
 
-## What I'm Learning
+## Post 1
 
-- VuePress configuration
-- Blog setup
-- Custom styling
-- Markdown writing
+Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
 
-Looking forward to sharing more posts about my coding journey!
+Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.

@@ -1,8 +1,8 @@
 <template><div><h1><RouteLink to="/">Muhammed Mustafa</RouteLink></h1>
-<p><RouteLink to="/posts/">/posts</RouteLink> <RouteLink to="/about/">/about</RouteLink> <br>
-<RouteLink to="/">~</RouteLink> / <RouteLink to="/posts/">about</RouteLink></p>
+<p><RouteLink to="/posts/">/posts</RouteLink> <RouteLink to="/about/">/about</RouteLink></p>
+<p><RouteLink to="/">~</RouteLink> / <RouteLink to="/about/">about</RouteLink></p>
 <h2>About Me</h2>
-<p>I'm Muhammed Mustafa, a computer science student at Salahaddin University in Erbil, Iraq. I'm passionate about web development and solving interesting programming problems.</p>
+<p>My name is Muhammed Mustafa, a final-year Software Engineering student at Salahaddin University. Currently in my 4th grade (senior year), I am passionate about technology and problem-solving, with a growing interest in Cloud Engineering. I am actively building my skills in cloud platforms, infrastructure, and DevOps practices to pursue a career in cloud technologies.</p>
 <h3>What I Do</h3>
 <ul>
 <li><strong>Web Development</strong>: Building modern web applications with JavaScript frameworks</li>

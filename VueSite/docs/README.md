@@ -5,7 +5,7 @@
 
 ## Hello!
 
-I am a student at Salahaddin University passionate about web development and solving interesting problems. I love learning new things about programming, databases, and web security.
+My name is Muhammed Mustafa, a final-year Software Engineering student at Salahaddin University. Currently in my 4th grade (senior year), I am passionate about technology and problem-solving, with a growing interest in Cloud Engineering. I am actively building my skills in cloud platforms, infrastructure, and DevOps practices to pursue a career in cloud technologies.
 
 Feel free to read [about myself](/about/README.md) or to look at my [posts](/posts/README.md).
 
