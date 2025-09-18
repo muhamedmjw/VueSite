@@ -120,7 +120,6 @@ export default defineUserConfig({
     lastUpdated: false,
     contributors: false,
     smoothScroll: true,
-    
   }),
 
   bundler: viteBundler(),
