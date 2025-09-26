@@ -6,4 +6,4 @@
 
 ## Posts
 
-- [404 URL Checker](./404-URL-Checker.md) ─ August 29, 2025
+- [404 URL Checker](./404-URL-Checker.md) ─ August 16, 2025
