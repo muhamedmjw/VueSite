@@ -6,6 +6,4 @@
 
 ## Posts
 
-- [First Post](./post1.md) ─ October 29, 2024
-- [Second Post](./post2.md) ─ September 14, 2025
-
+- [404 URL Checker](./post1.md) ─ August 16, 2025
