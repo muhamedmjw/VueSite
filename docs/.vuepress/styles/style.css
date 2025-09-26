@@ -6,6 +6,10 @@ body {
     font-family: 'Noto Serif', serif;
 }
 
+.vp-sidebar {
+  display: none !important;
+}
+
 /* Container - responsive width with padding */
 div {
     max-width: 750px;
@@ -118,6 +122,31 @@ code {
     word-break: break-word; /* Prevent long code lines from overflowing */
 }
 
+div[class*=language-]::before {
+    font-family: 'JetBrains Mono', Courier, monospace;
+}
+
+div[class*=language-].line-numbers-mode::after {
+    background-color: rgb(63, 99, 82);
+    
+}
+
+div[class*=language-].line-numbers-mode .line-number::before {
+    font-family: 'JetBrains Mono', Courier, monospace;
+    color: #ecececff;
+}
+
+.vp-copy-code-button::before {
+    font-family: 'JetBrains Mono', Courier, monospace;
+    color: #ecececff;
+}
+
+.vp-copy-code-button::after {
+    font-family: 'JetBrains Mono', Courier, monospace;
+    font-weight: 200;
+}
+
+
 
 /* Images - responsive */
 img {
@@ -201,7 +230,7 @@ table tfoot {
     /* Make navigation links stack on very small screens */
     p:first-of-type a {
         display: inline-block;
-        margin-right: 8px;
+        margin-right: 0px;
         margin-bottom: 4px;
     }
     
@@ -214,6 +243,7 @@ table tfoot {
         padding: 12px;
         font-size: 0.8em;
         margin: 12px 0;
+
     }
 }
 
