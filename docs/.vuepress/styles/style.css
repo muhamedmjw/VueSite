@@ -127,7 +127,7 @@ div[class*=language-]::before {
 }
 
 div[class*=language-].line-numbers-mode::after {
-    background-color: rgb(63, 99, 82);
+    background-color: rgb(66, 66, 66);
     
 }
 
