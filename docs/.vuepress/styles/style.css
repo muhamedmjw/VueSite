@@ -6,23 +6,28 @@ body {
     font-family: 'Noto Serif', serif;
 }
 
+/* Container - responsive width with padding */
 div {
-    width: 750px;
+    max-width: 750px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 h1 {
     padding-top: 12px;
     margin: 0;
-    margin-bottom: 8px ;
-    font-size: 3em;
+    margin-bottom: 8px;
+    font-size: clamp(2em, 5vw, 3em); /* Responsive font size */
     font-weight: 600;
     text-align: left;
     color: #ecececff;
     font-family: 'Noto Serif', serif;
+    line-height: 1.2;
 }
 
-p{
+p {
     font-weight: 300;
+    line-height: 1.6;
 }
 
 /* Main navigation links (/posts /about)*/
@@ -50,24 +55,39 @@ h2 {
     margin-top: 0 !important;
     margin-bottom: 0;
     padding: 4px 0px !important;
-    font-size: 2.25em;
+    font-size: clamp(1.5em, 4vw, 2.25em); /* Responsive font size */
     font-weight: 600;
     font-family: 'Noto Serif', serif !important;
+    line-height: 1.3;
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Noto Serif', serif;
+    color: #ecececff;
+    line-height: 1.4;
+}
+
+h3 {
+    font-size: clamp(1.2em, 3.5vw, 1.8em);
 }
 
 p a {
     font-weight: 300 !important;
     color: #ecececff !important;
+    word-break: break-word; /* Prevent long URLs from overflowing */
 }
 
 a:hover {
     color: #b9b9b9ff !important;
 }
 
+/* Main content container - responsive padding */
 #app, .theme-default-content, .page {
     max-width: 750px !important;
+    width: 100% !important;
     margin: 0 auto !important;
-    padding: 20px 0px !important;
+    padding: 20px 16px !important; /* Side padding for mobile */
+    box-sizing: border-box !important;
 }
 
 ul li a {
@@ -84,4 +104,171 @@ ul {
 
 ul li p {
     font-weight: 300;
+}
+
+/* Code blocks - make them responsive */
+
+
+pre {
+    background: #303030;
+}
+
+code {
+    font-family: 'JetBrains Mono', Courier, monospace;
+    word-break: break-word; /* Prevent long code lines from overflowing */
+}
+
+
+/* Images - responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 16px auto;
+}
+
+/* Tables - responsive */
+table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+}
+
+table thead,
+table tbody,
+table tfoot {
+    display: table;
+    width: 100%;
+}
+
+/* Media Queries for different screen sizes */
+
+/* Tablet styles */
+@media screen and (max-width: 768px) {
+    #app, .theme-default-content, .page {
+        padding: 16px 12px !important;
+    }
+    
+    h1 {
+        font-size: clamp(1.8em, 6vw, 2.5em);
+        padding-top: 8px;
+    }
+    
+    h2 {
+        font-size: clamp(1.4em, 5vw, 2em);
+    }
+    
+    p:first-of-type {
+        margin-bottom: 20px !important;
+    }
+    
+    ul li {
+        margin-left: 10px;
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+    #app, .theme-default-content, .page {
+        padding: 12px 8px !important;
+    }
+    
+    h1 {
+        font-size: clamp(1.5em, 7vw, 2.2em);
+        padding-top: 6px;
+        margin-bottom: 6px;
+    }
+    
+    h2 {
+        font-size: clamp(1.3em, 6vw, 1.8em);
+        padding: 2px 0px !important;
+    }
+    
+    h3 {
+        font-size: clamp(1.1em, 5vw, 1.5em);
+    }
+    
+    p {
+        font-size: clamp(0.9em, 3vw, 1em);
+    }
+    
+    p:first-of-type {
+        margin-bottom: 15px !important;
+        font-size: clamp(0.9em, 3vw, 1em);
+    }
+    
+    /* Make navigation links stack on very small screens */
+    p:first-of-type a {
+        display: inline-block;
+        margin-right: 8px;
+        margin-bottom: 4px;
+    }
+    
+    ul li {
+        margin-left: 8px;
+    }
+    
+    /* Improve code block readability on mobile */
+    pre {
+        padding: 12px;
+        font-size: 0.8em;
+        margin: 12px 0;
+    }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 320px) {
+    #app, .theme-default-content, .page {
+        padding: 8px 6px !important;
+    }
+    
+    h1 {
+        font-size: 1.4em;
+    }
+    
+    h2 {
+        font-size: 1.2em;
+    }
+    
+    p {
+        font-size: 0.9em;
+    }
+}
+
+/* Landscape mobile orientation */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+    h1 {
+        padding-top: 4px;
+        margin-bottom: 4px;
+    }
+    
+    p:first-of-type {
+        margin-bottom: 12px !important;
+    }
+    
+    #app, .theme-default-content, .page {
+        padding: 8px 16px !important;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Focus styles for accessibility */
+a:focus, button:focus {
+    outline: 2px solid #ecececff;
+    outline-offset: 2px;
+}
+
+/* Ensure content doesn't get cut off on very wide screens */
+@media screen and (min-width: 1200px) {
+    #app, .theme-default-content, .page {
+        max-width: 800px !important;
+    }
 }

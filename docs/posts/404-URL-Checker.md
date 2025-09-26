@@ -37,7 +37,7 @@ This is where the magic happens. Starting from the homepage, the tool visits eve
 
 The tool provides clean, actionable output:
 
-```
+```bash
 === CRAWL COMPLETE ===
 Found 3 broken links:
 1. https://example.com/old-page 
