@@ -30,5 +30,5 @@ export default defineUserConfig({
 
   bundler: viteBundler(),
 
-  base: '/VueSite/',
+  base: '/',
 })
