@@ -2,7 +2,7 @@
 
 [/posts](/posts/README.md) [/about](/about/README.md)
 
-[~](../README.md) / [posts](/posts/README.md) / [404 URL Checker](/posts/post1.md)
+[~](../README.md) / [posts](/posts/README.md) / [404 URL Checker](/posts/404-URL-Checker.md)
 
 ## Building a Python Web Crawler to Find 404 Errors
 
