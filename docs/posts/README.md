@@ -1,6 +1,6 @@
 # [Muhammed Mustafa](../README.md)
 
-[/posts](/posts/README.md) [/about](/about/README.md)
+[/posts](/posts/README.md) [/about](/about/README.md) [/resume](/resume/README.md)
 
 [~](../README.md) / [posts](/posts/README.md)
 
