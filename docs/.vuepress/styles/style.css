@@ -351,6 +351,59 @@ a:focus, button:focus {
     background-color: #ffffff;
 }
 
+/* Hide the fallback text by default when PDF viewer is present */
+.pdf-viewer-container p {
+    display: none;
+    background-color: #2a2a2a;
+    border: 1px solid #404040;
+    border-radius: 6px;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    color: #cccccc;
+    font-size: 0.9em;
+}
+
+.pdf-viewer-container p a {
+    color: #ecececff !important;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+/* Only show fallback text if iframe fails to load or on browsers that don't support PDF viewing */
+.pdf-viewer-container iframe:not([src]),
+.pdf-viewer-container iframe[src=""] {
+    display: none;
+}
+
+.pdf-viewer-container iframe:not([src]) + p,
+.pdf-viewer-container iframe[src=""] + p {
+    display: block;
+}
+
+/* Loading state for PDF viewer */
+.pdf-viewer-container::before {
+    content: "Loading PDF...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #888;
+    font-style: italic;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Hide loading text when iframe has loaded */
+.pdf-viewer-container:has(iframe[src*=".pdf"])::before {
+    display: none;
+}
+
+/* Alternative method for browsers that don't support :has() */
+.pdf-viewer:not([src=""]) ~ .pdf-viewer-container::before {
+    display: none;
+}
+
 /* Mobile fallback message */
 .mobile-fallback {
     display: none;
@@ -372,23 +425,6 @@ a:focus, button:focus {
     color: #ecececff !important;
     font-weight: 400;
     text-decoration: underline;
-}
-
-/* Loading state for PDF viewer */
-.pdf-viewer-container::before {
-    content: "Loading PDF...";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #888;
-    font-style: italic;
-    z-index: 1;
-}
-
-/* Hide loading text when iframe loads */
-.pdf-viewer:not([src=""]) + .pdf-viewer-container::before {
-    display: none;
 }
 
 /* Responsive design for tablets */
@@ -427,21 +463,5 @@ a:focus, button:focus {
     
     .resume-actions {
         margin: 16px 0 24px 0;
-    }
-}
-
-/* Extra small screens */
-@media screen and (max-width: 320px) {
-    .download-btn {
-        font-size: 0.8em;
-        padding: 10px;
-    }
-}
-
-/* High DPI displays - ensure crisp PDF rendering */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .pdf-viewer {
-        image-rendering: -webkit-optimize-contrast;
-        image-rendering: crisp-edges;
     }
 }
