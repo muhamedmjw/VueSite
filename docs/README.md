@@ -9,4 +9,4 @@ My name is Muhammed Mustafa, a final-year Software Engineering student at Salaha
 
 Feel free to read [about myself](/about/README.md), check out my [posts](/posts/README.md), or view my [resume](/resume/README.md).
 
-[GitHub](https://github.com/muhamedmjw)
+[GitHub](https://github.com/muhamedmjw) [Email](mailto:muhammmedmjw@gmail.com)
