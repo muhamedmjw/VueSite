@@ -1,7 +1,7 @@
 {
   "name": "vuesite",
-  "description": "A VuePress project",
-  "version": "0.0.1",
+  "description": "Personal website and blog",
+  "version": "1.0.0",
   "license": "MIT",
   "type": "module",
   "scripts": {
